@@ -4,15 +4,47 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 30px;
+    background-image: linear-gradient(to right bottom, rgba(85, 20, 176, 0.801), rgba(219, 215, 92, 0.808)),
+    url('https://images.unsplash.com/photo-1475196045479-d7313ffcd5f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-position: center;
+    background-size: cover;
+}
+
 .container {
     margin: 0 auto;
 }
 
 .header {
     width: 100%;
+    color: #fff;
 }
 
 .header .container {
     padding: 70px 0;
     text-align: center;
+}
+
+.row {
+    margin: 2rem auto;
+}
+
+form {
+    margin-bottom: 100px;
+}
+
+label {
+    color: #fff;
+}
+
+#submit {
+    border: 0;
+    padding: 7px 20px;
+    display: inline-block;
+    margin-top: 1rem;
+    float: right;
+    border-radius: 45px;
+    color: #fff;
+    background: linear-gradient(to right bottom,#5614B0, #DBD65C);
 }
