@@ -9,34 +9,54 @@
   </head>
 
   <body>
+    <div class="container">
       <header class="header">
+        <div class="container">
           <h1 id="title"> Lovebirds Headphones Survey Form</h1>
           <p id="description">Thank you for taking the time to help us improve the product</p>
+        </div>
       </header>
       <form action="" id="survey-form">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name" id="name-label">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your Name" required class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label for="email" id="email-label">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your Email" required class="form-control">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4">
+              <label for="number" id="number-label">Age(optional)</label>
+              <input type="number" class="form-control" name="number" id="number" min="00" max="99" placeholder="Age">
+            </div>
+            <div class="col-md-4">
+              <label for="">Which option best describes your current role?</label>
+                <select name="" id="dropdown">
+                    <option value="Default">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full-Time-Job">Full Time Job</option>
+                    <option value="Prefer-Not-To-Say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+              <input type="radio" name="radio1" value="Yes">
+              <input type="radio" name="radio1" value="No">
+              <input type="checkbox" value="Employed" name="Employment">
+              <input type="checkbox" value="Unemployed" name="Employment">
+            </div>
+          </div>
 
-          <label for="name">Full Name</label>
-          <input type="name" id="name" name="name" placeholder="Enter your Name">
-          <hr>  
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your Email">
-          <hr>  
-          <label for="">Age(optional)</label>
-          <input type="number" name="number" id="number" min="00" max="99" placeholder="Age">
-          <hr>  
-          <label for="">Which option best describes your current role?</label>
-          <select name="" id="">
-              <option value="">Select current role</option>
-              <option value="">Student</option>
-              <option value="">Full Time Job</option>
-              <option value="">Prefer not to say</option>
-              <option value="">Other</option>
-          </select>
-          <hr>  
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          
+          <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
           <button id="submit">Submit</button>
 
       </form>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
